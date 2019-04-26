@@ -1,4 +1,4 @@
-def readPOM() {
+def call() {
     POM = sh ( script: 'cat build.gradle', returnStdout: true)
     def list = readGradleBuild file: 'build.gradle'
 
@@ -10,4 +10,4 @@ def readPOM() {
 
 
 }
-return this
+//return this
